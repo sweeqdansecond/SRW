@@ -1,0 +1,138 @@
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  background-color: rgb(21, 21, 21);
+  font-family: 'Google Sans', sans-serif;
+  color: white;
+
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  flex: 1 0 auto;
+  margin: 0;
+  padding: 0;
+}
+
+/* Хедер */
+.header {
+  padding: 20px;
+  flex-shrink: 0;
+}
+
+.sweeqdan {
+  font-weight: 700;
+  font-size: 24px;
+  color: white;
+}
+
+.cards {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: nowrap;
+  padding: 0;
+  margin: 20px 0 0 12px;
+  overflow-x: auto;
+  height: 320px;
+  flex-shrink: 0;
+}
+
+.card {
+  background-color: #2a2a2a;
+  padding: 20px;
+  border-radius: 12px;
+  width: 250px;
+  text-align: center;
+  box-shadow: 0 0 10px rgba(0,0,0,0.3);
+  margin-right: 6px;
+  flex-shrink: 0;
+}
+
+.card:last-child {
+  margin-right: 0;
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.card h3 {
+  margin: 10px 0 5px;
+  font-weight: 700;
+  font-size: 20px;
+}
+
+.card p {
+  font-size: 14px;
+  opacity: 0.8;
+  margin-bottom: 10px;
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-between;
+  gap: 8px;
+}
+
+.btn {
+  flex: 1;
+  text-align: center;
+  padding: 8px 0;
+  border-radius: 6px;
+  color: white;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 14px;
+}
+
+.download {
+  background-color: #4CAF50;
+}
+
+.source {
+  background-color: #f44336;
+}
+
+.btn.disabled {
+  background-color: #888 !important;
+  cursor: not-allowed;
+  color: #ccc !important;
+  pointer-events: none;
+  text-decoration: none;
+}
+
+.footer {
+  flex-shrink: 0;
+  background-color: #1a1a1a;
+  color: #ccc;
+  padding: 20px;
+  text-align: center;
+  border-top: 1px solid #444;
+  margin-top: auto;
+}
+
+.footer h4 {
+  margin-bottom: 12px;
+  font-weight: 700;
+  font-size: 18px;
+  color: white;
+}
+
+.footer .contacts {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer .contacts li {
+  margin: 6px 0;
+  font-size: 14px;
+  opacity: 0.8;
+}
